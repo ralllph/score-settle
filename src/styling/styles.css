@@ -1,0 +1,669 @@
+/* GENERAL ELEMENT STYLING */
+*{
+box-sizing: border-box;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family: 'Open Sans', sans-serif;
+}
+
+img{
+max-width: 100%;
+max-height: 100%;
+}
+
+.button{
+display: inline-block;
+padding: .5em 1.5em;
+text-align: center;
+color: inherit;
+font-weight: bold;
+cursor: pointer;
+}
+
+li{
+list-style: none;
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+.i, button{
+cursor: pointer;
+}
+
+.i:hover, .i:focus, .button:hover, .button:focus, 
+button:hover, button:focus{
+transform: scale(1.1);
+}
+
+.icon-div{
+border: 1px solid;
+width:min-content;
+display: flex;
+justify-content: center;
+border-radius: 50%;
+padding:.5em;
+}
+
+.dark,.light-btn,.slider-left button , .slider-right button{
+background: #121212;
+color:	#FFFFFF;
+}
+
+.light,.dark-btn{
+background: #FFFFFF;
+color: black;
+}
+
+/*   TYPIOGRAPHY   */
+H1{
+font-weight: 800;
+}
+
+/* Statistics Typiography */
+.player-number{
+font-size: 3rem;
+}
+
+.stat-number{
+font-size: 1.5rem;
+margin: .5em 0 0 0 ;
+}
+
+.stat-description{
+font-size: .8rem;
+text-align: left;
+font-weight: bold;
+}
+
+.stat-percentage{
+font-size: 1.1rem;
+}
+
+.stat-action-container{
+margin: 0 auto;
+max-width: 500px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.stat-action-container h2{
+margin-bottom: .3em;
+margin-top: 1em;
+}
+
+.stat-action{
+font-size: 1rem;
+}
+
+.stat-quote{
+margin: 0 auto;
+max-width: 1000px;
+text-align: center;
+}
+/* END OF TYPIOGRAPHY */
+
+/* STYLING COMPONENTS */
+/* hEADER SECTION */
+.header-section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: .3em 0;
+}
+
+.header-logo-section{
+display: flex;
+align-items: center;
+}
+
+.header-logo-container{
+width:80px;
+}
+
+.header-logo-image{
+width: 100%;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+}
+
+.header-icon-section ul{
+display: flex;
+}
+
+.header-icon-section .i{
+font-size: 1.5rem;
+}
+
+.header-icon-section li{
+margin-right: 1em;
+}
+
+.header-title{
+margin: 0;
+}
+
+.header-nav{
+display: none;
+}
+
+.user-signed-in{
+border: 1px solid;
+border-radius: 50%;
+padding: .1em  .7em .1em .7em;
+font-weight: 800;
+cursor: pointer;
+}
+
+.sidebar{
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+height: 100vh;
+width: 0;
+overflow-x: hidden;
+display: flex;
+justify-content: center;
+transition: width .4s ease-in-out .2s;
+}
+
+.sidebar-ul{
+display: flex;
+justify-content: space-evenly;
+height:100vh;
+flex-direction: column;
+
+}
+
+.sidebar-icon{
+top: 0;
+font-size: 2rem;
+position: absolute;
+right: 5px;
+}
+
+.sidebar-list a:hover{
+color: blue;
+}
+
+/* Hero Section  */
+.hero-section{
+width: 100%;
+height: 70vh;
+}
+
+.img-container, .video-container{
+width: 100%;
+position: relative;
+height: 100%;
+}
+
+.video-container video{
+width: 100%;
+object-fit: cover;
+object-position: left center;
+height: 100%;
+display: block;
+}
+
+.img-container img{
+height: 100%;
+object-fit: cover;
+object-position: center center;
+width: 100%;
+display: block;
+}
+
+.img-video-tag{
+position: absolute;
+color: white;
+text-shadow: 2px 2px black;;
+width: 100%;
+height: 100%;
+display : flex;
+justify-content: center;
+align-items: flex-end;
+top: 0;
+}
+
+/* Statistics  section  */  
+.player-card{
+margin: 0 auto;
+padding: 1em;
+display: flex;
+flex-direction: column;
+}
+
+.player-details{
+display: flex;
+align-items: center;
+}
+
+.player-number-container{
+border: 1px solid;
+width: 80px;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 1em;
+}
+
+.player-surname{
+display: block;
+}
+
+.player-img-container{
+width: 100%;
+position: relative;
+height: 60vh;
+}
+
+.player-img-container img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.slider-left, .slider-right{
+position: absolute;
+top: 0;
+display: flex;
+align-items: center;
+width: 100%;
+height: 100%;
+cursor: pointer;
+}
+
+.slider-left{
+justify-content: flex-start;
+}
+
+.slider-right{
+justify-content: flex-end;
+}
+
+.slider-left button, .slider-right button{
+padding: 1em;
+}
+
+.stat-figures{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.stat-action{
+margin: 1em auto;
+margin-bottom: 2em;
+font-size: 1rem;
+}
+
+/*footer */
+.footer-section{
+border-top: 1px solid;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.footer-icon .i{
+font-size: 1.5rem;
+}
+
+.footer-icon .i:hover{
+color: blue;
+}
+.footer-icon-links{
+display: flex;
+margin-top: 1.5em;
+padding: 0;
+}
+
+.footer-icons-container{
+max-width: 500px;
+margin: 1em auto;
+}
+
+.footer-icon-list{
+margin-left: 1em;
+}
+
+.footer-links{
+display: flex;
+flex-direction: column;
+padding: 0;
+justify-content: center;
+}
+
+.footer-link-list{
+border-top: 1px solid ;
+border-bottom: 1px solid ;
+text-align: center;
+}
+
+.footer-copywrights-section{
+text-align: center;
+max-width: 300px;
+margin: 0 auto;
+margin-bottom: 2em;
+}
+
+/* FORM */
+.form-container{
+max-width: 90%;
+margin: 0 auto;
+margin-top: 5em;
+padding: 2em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #121212;
+color: #FFFFFF;
+}
+
+.form-container h2{
+margin: 0;
+font-weight: 800;
+}
+
+.form-container input{
+margin-left: 1em;
+padding: .5em;
+width: 100%;
+}
+
+.form-container button{
+width: 40%;
+margin: 0 auto;
+margin-top: 1em;
+background-color: #FFFFFF;
+color: #121212;
+font-size: 1.1rem;
+}
+
+.form-container .input-container{
+margin-top: 2em;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.formLink{
+margin: 0;
+margin-left: .5em;
+color: blue;
+}
+
+form{
+outline: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+form h5{
+margin-bottom: 0;
+}
+
+/* player comparison */
+.comparison{
+display: flex;
+padding: 1em .5em;
+justify-content: center;
+align-items: center;
+}
+.compare-area{
+border: 1px solid ;
+margin-left: .7em;
+width: 50%;
+padding-bottom: 0;
+}
+.promptAddPlayer{
+margin-left: auto;
+margin-right: auto;
+max-width: 200px;
+text-align: center;
+font-size: .9rem;
+}
+
+/*  compare modal component */
+.compare-modal{
+position: fixed;   
+top: 0;
+right: 0;
+overflow-x: hidden;
+z-index: 100;   
+height: 50%;
+display: flex;   
+width: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding: 2em;
+}
+
+
+.compare-modal form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.compare-modal form input{
+margin-top: .2em;
+
+}
+
+.compare-modal form button,.formError{
+margin: 1em auto;
+}
+
+.modal-icon{
+position: absolute;
+top: 0;
+right: 5px;
+}
+.formError{
+font-size: 1.1rem;
+padding: .2em ;
+color: red;
+margin: 0;
+}
+
+
+/* end of compare modal  */
+.mannequin-container{
+position: relative;
+width: 100%;
+}
+
+.mannequin-container img{
+width: 100%;
+display: block;
+object-fit: contain;
+
+}
+.addPlayerButton{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+.plus-sign{
+border: 1px solid rgb(233,0,82);
+border-radius: 50%; 
+padding: .2em .9em;
+background-color: rgb(233,0,82);
+font-size: 1.1rem;
+color: white;
+}
+
+/*  compare table  */
+.table{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.table-stats-container{
+display: flex;
+width: 80%;
+justify-content: space-evenly;
+}
+
+.player2-stats,.player1-stats,.table-stats-description{
+display: flex;
+flex-direction: column;
+}
+
+/* media query for large screen sizes */
+@media (min-width:700px){
+
+/* hEADER SECTION */
+.header-logo-image{
+width: 100%;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+}
+
+.header-logo-container{
+width:100px;
+}
+
+.header-icon-section {
+display: none;
+}
+
+.header-nav{
+display: block;
+margin-right: 1em;
+margin-left: 0;
+}
+
+.header-ul{
+display:flex;
+}
+
+.header-ul li{
+margin-left: 1em;
+font-size: 1rem;
+}
+
+.header-ul li a:hover{
+border-bottom: 1px solid  rgb(233,0,82);
+color:rgb(233,0,82);
+}
+
+.header-icon{
+    font-size: 1.2rem;
+}
+
+.header-icon:hover{
+border: unset !important;
+color: unset !important;
+transform: scale(1.2);
+}
+
+.user-signed-in{
+border-radius: 50%;
+padding: 0  .5em 0 .5em;
+}
+
+/* Hero Section  */
+.hero-section{
+height: 110vh;
+}
+.img-video-tag{
+font-size: 1.5rem;
+}
+
+/* Statistics  section  */  
+.player-card{
+margin: 0 auto;
+padding: 1em;
+display: flex;
+flex-direction: row;
+}
+
+.player-bio{
+width: 50%;
+}
+
+.stat-action-container{
+margin-left: 1em auto;
+width: 50%;
+padding: 2em;
+}
+.stat-quote{
+line-height: 2em;
+margin-top: .5em; 
+}
+
+.stat-action-container h2{
+margin: 0;
+}   
+
+/*footer */   
+.footer-links{
+display: flex;
+flex-direction: row;
+padding: 0;
+justify-content: center;
+margin: 0;
+}
+
+.footer-link-list{
+border: none;
+text-align: center;
+margin-left: 1em;
+font-size: .9em;
+font-weight: bold;
+}
+
+.footer-link-list:hover{
+    color: blue;
+}
+
+.footer-copywrights-section{
+text-align: center;
+max-width: 1000px;
+margin: 0 auto;
+margin-bottom: 2em;
+font-size: .8em;
+}
+
+/* LOGIN SECTION */
+.form-container{
+max-width: 50%;
+}
+
+/* player comparison */
+.compare-area{
+width: 25%;
+}
+
+}
+
+.empty{
+display: none;
+}
