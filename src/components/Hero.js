@@ -58,7 +58,7 @@ else{
 /* video type */ 
     return(
     <div key={i} className= {selectDisplay("video-container", i)}>
-    <video src={element.url} autoPlay="autoPlay"  muted loop />
+    <video src={element.url} autoPlay="autoPlay"  muted loop  playsInline/>
     <div className="img-video-tag">
     <h2>   {element.info}  </h2> 
     </div>
