@@ -1,4 +1,4 @@
-Score settle is a soccer appp that enable you compare player statistics from different leagues.
+Score settle is a soccer app that enable you compare player statistics from different leagues.
 
 Key features:
 
